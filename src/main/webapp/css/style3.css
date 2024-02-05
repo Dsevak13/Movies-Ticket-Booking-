@@ -1,0 +1,26 @@
+
+#slideshow-caption p {
+  padding: 0;
+  font: normal 130% arial, sans-serif;
+  color: #FFF;
+  text-shadow: 1px 1px #000;}
+ 
+  #table_wrapper{ 
+	  border:1px solid  olive;
+	   float:center; 
+	  }
+  #tbody{height:350px;overflow-y:auto;width:700px;background:black;}
+  table{border-collapse:collapse; }
+  td{padding:5px 5px; /* pixels */
+ /* to avoid the hacks for the padding */
+} 
+  .td1{width:100px;}
+  .td2{width:140px;}
+  .td3{border-right-width:0;} /* optional */
+
+
+  textarea  
+{  
+   font-family:"Times New Roman", Times, serif;  
+   font-size: 25px;   
+}

@@ -1,0 +1,32 @@
+<%@ include file="uheader.jsp"%>
+<%@ page import="java.sql.*" import="com.demo.Dao.*" %>
+<%@ page  import="java.sql.*" import="java.util.Random" import="com.demo.dao7.*"    %>
+
+
+	                  <%	
+String email = request.getParameter("first_name");
+
+String sql="insert into userl ('"+session.getAttribute("first_name")+"','"+email+"' )";
+
+					  
+					  %>
+
+
+<%
+try{
+
+	Connection con1 = Subscribe_Dao.getConnection();
+	Statement st1 = con1.createStatement();
+	System.out.println(sql);
+	st1.executeUpdate(sql);
+		response.sendRedirect("subscribe.jsp?id=succ");
+
+}
+
+
+catch(Exception e1)
+{
+		response.sendRedirect("subscribe.jsp?id=duplicate");
+
+}
+%>
